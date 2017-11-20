@@ -1,0 +1,197 @@
+﻿<%@ Page Title="" Language="C#"  AutoEventWireup="true" CodeFile="Registration.aspx.cs" Inherits="Registration" %>
+
+
+    <table style="background-image: url('Images/Chinese-new-year-2013-background.jpg'); " 
+        width="100%" class="intLog">
+        <tr>
+            <td colspan="3" 
+                style="background-image: url('Images/wingwahbackgroundchinese.jpg')" 
+                align="center" class="intLog" bgcolor="#CC3300">
+                <asp:Label ID="Label3" runat="server" style="font-family: calibri; font-size: xx-large; color: #FFFFFF;" Text="-- Register --"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+               <asp:Label ID="Label1" runat="server" CssClass="style11" Text="User Id :"></asp:Label>
+                <asp:Label ID="Label2" runat="server" CssClass="style11"></asp:Label>
+            </td>
+            <td class="style13">
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                <asp:TextBox ID="TextBox1" runat="server" CssClass="style12" 
+                    placeholder="  Name" required="Required" Width="100%" Height="30px"></asp:TextBox>
+            </td>
+            <td class="style13">
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                </td>
+            <td>
+                <asp:TextBox ID="TextBox2" runat="server" CssClass="style12" 
+                    placeholder=" Address" required="Required" TextMode="MultiLine" 
+                    Width="99%"></asp:TextBox>
+            </td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                </td>
+            <td align="left">
+                <asp:TextBox ID="TextBox3" runat="server" CssClass="style12" 
+                    placeholder="  Mobile No." required="Required" MaxLength="10" Width="100%" 
+                    Height="30px"></asp:TextBox>
+                <br />
+                <asp:RegularExpressionValidator ID="RxvMobNo" runat="Server" 
+                                ControlToValidate="TextBox3" ErrorMessage="Invalid Mobile No.!" 
+                                ForeColor="#FF3300" ValidationExpression="^[7-9]\d{9}$" 
+                                
+                    style="font-family: Calibri; color: #990000; font-size: large;"></asp:RegularExpressionValidator>
+            </td>
+            <td align="left" class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                </td>
+            <td class="style9" align="left" >
+                <asp:TextBox ID="TextBox4" runat="server" CssClass="style12" 
+                    placeholder="  Email Id" required="Required" Width="100%" Height="30px"></asp:TextBox>
+                <br />
+                 <asp:RegularExpressionValidator ID="RxvEmail" runat="Server" 
+                                ControlToValidate="TextBox4" ErrorMessage="Invalid Email Id!" 
+                                ForeColor="#FF3300" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" 
+                                
+                    style="font-family: Calibri; color: #800000; font-size: large;"></asp:RegularExpressionValidator>
+            </td>
+            <td align="left" class="style13">
+                 &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                <asp:TextBox ID="TextBox5" runat="server" CssClass="style12" 
+                    placeholder="  Your Age" required="Required" MaxLength="3" Width="100%" 
+                    Height="30px"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                </td>
+            <td>
+                <asp:TextBox ID="TextBox6" runat="server" CssClass="style12" 
+                    placeholder="  Password" required="Required" TextMode="Password" 
+                    MaxLength="16" Width="100%" Height="30px"></asp:TextBox>
+            </td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td align="center">
+                <asp:RadioButtonList ID="RadioButtonList1" runat="server" 
+                    RepeatDirection="Horizontal" 
+                    style="color: #000000; font-family: Candara; font-size: x-large; font-weight: 700" 
+                    Width="250px">
+                    <asp:ListItem>Male</asp:ListItem>
+                    <asp:ListItem>Female</asp:ListItem>
+                </asp:RadioButtonList>
+            </td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td class="style13">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style13">
+            </td>
+        </tr>
+        <tr>
+            <td align="center" colspan="3">
+                <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="style10" 
+                    Height="40px" Width="200px" Font-Size="X-Large" ForeColor="#333333" 
+                    BorderColor="#009933" OnClick="btnSubmit_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Button ID="btnSubmit0" runat="server" Text="&lt; Go Back" CssClass="style10" 
+                    Height="40px" Width="200px" Font-Size="X-Large" ForeColor="#333333" 
+                    BorderColor="#009933" OnClick="btnSubmit_Click" />
+            </td>
+        </tr>
+        <tr>
+            <td align="right" class="style13">
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td width="20%">
+                &nbsp;</td>
+        </tr>
+    </table>
+
